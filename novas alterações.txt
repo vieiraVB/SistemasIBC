@@ -1,0 +1,36 @@
+SIMEI
+
+-alteração do modal de devolução
+--adicionar opção para marcar se veio algum item danificado
+
+-arrumar o salvamento dos itens dos checkbox na seleção de materiais
+-arrumar a criação de usuário onde o site buga quando clica no cpf e sai sem digitar nada
+-caixa de termo de responsabilidade indicando o que o professor deve ter ciencia 
+em relação ao cuidado com os materiais que foram solicitados
+-- professor só vai conseguir fazer a solicitação após dar o aceite no checkbox do termo. segue abaixo o texto do termo de compromisso:
+	
+
+"Termo de Compromisso de Responsabilidade pelo Uso de Itens Institucionais
+
+Ao aceitar o presente termo, o(a) Professor(a) declara estar ciente e de acordo com as seguintes condições:
+
+1. Todos os itens recebidos foram entregues em perfeito estado de conservação e funcionamento.
+
+2. O(a) Professor(a) assume total responsabilidade pela guarda, zelo e uso adequado dos itens, devendo acompanhar os(as) alunos(as) durante as práticas em sala de aula ou em outros ambientes da instituição, a fim de evitar danos ou mau uso.
+
+3. Caso algum item seja devolvido com defeito ou danificado, o(a) Professor(a) será responsabilizado(a) por sua reparação ou substituição, salvo quando o problema for comunicado imediatamente à Gerência de Tecnologia no ato de seu uso.
+
+4. É dever do(a) Professor(a) devolver, de forma imediata, qualquer item que apresente defeito, informando formalmente à Gerência de Tecnologia, a fim de que o ocorrido seja registrado e não seja contabilizado como entregue em más condições.
+
+Declaro que li e compreendi integralmente este termo e que estou de acordo com todas as responsabilidades aqui descritas."
+
+
+-criar a função de gerar relatorio (intervalo de tempo determinado pelo usuario)
+--informar a quantidade de solicitações; itens que voltaram e foram identificados como danificados, professor que levou o item, nome do item, data da solicitação e da devolução e sala de uso.
+
+
+
+SIGEI
+
+-criar a função de gerar relatorio (intervalo de tempo determinado pelo usuario)
+--Mostrar o total de materiais do estoque; Mostrar a quantidade em falta(total, indisponiveis e baixo estoque); informar a quantidade de entradas e saidas; quantidade de tramitações, o nome de quem solicitou e do material solicitado e o status da tramitação.
