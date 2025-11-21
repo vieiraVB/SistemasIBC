@@ -1,0 +1,32 @@
+# Atualizações do SIMEI (21/11/2025)
+
+ O foco foi organizar a bagunça das pastas e resolver aqueles bugs chatos que estavam travando o envio das solicitações.
+
+## 📂 O que eu mudei na Estrutura
+Aproveitei pra organizar, Antes estava tudo misturado, agora separei direito:
+* Criei pastas para organizar melhor (`/pages`, `/includes`, `/css`).
+* Tirei o CSS de dentro do HTML e joguei para arquivos externos. O código ficou muito mais limpo de ler.
+
+## 🐛 Bugs Resolvidos
+
+### 1. Envio de Solicitações (O mais importante)
+Arrumei aquele problema onde clicava em "Enviar" e a página recarregava sem fazer nada.
+* **O problema:** O PHP estava se perdendo quando eu mandava um Array (vários checkboxes) versus uma String (o botão do software).
+* **A solução:** Reescrevi a lógica pra ele entender qualquer tipo de solicitação (inclusive misturar Equipamento com Material).
+* **Melhoria:** Agora, se der erro no preenchimento, o formulário não apaga tudo o que eu digitei. Ele mantém os dados pra não ter que preencher tudo de novo.
+
+### 2. Busca de Materiais
+A busca "ao vivo" estava dando umas engasgadas (travadinhas), principalmente no celular.
+* Adicionei um **Debounce** (um delayzinho de leve): agora ele espera eu parar de digitar pra filtrar. Ficou bem mais fluido.
+* O sistema agora busca também pela **descrição**. Ex: se digitar "DPS", ele acha o item mesmo que o nome seja técnico, desde que esteja na descrição.
+
+### 3. Tela de Usuários
+* Arrumei o botão de "ver senha" (olhinho) que tinha parado de funcionar dependendo do layout. Agora tá pegando certinho.
+
+---
+
+## 💻 Arquivos que mexi
+* `solicitar.php` (Lógica nova de envio)
+* `materiais.php` (Script de busca otimizado)
+* `usuarios.php` (Correção do JS da senha)
+* Pastas `css/` e `includes/`
